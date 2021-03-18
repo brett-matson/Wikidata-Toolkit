@@ -298,4 +298,12 @@
 		<developerConnection>scm:git:https://github.com/Wikidata/Wikidata-Toolkit.git</developerConnection>
 	</scm>
 
+
+	<distributionManagement>
+		<repository>
+			<id>engagingthings</id>
+			<url>http://host.docker.internal:8081/repository/engagingthings/</url>
+		</repository>
+	</distributionManagement>
+
 </project>
