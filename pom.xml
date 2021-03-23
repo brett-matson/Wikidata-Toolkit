@@ -298,12 +298,19 @@
 		<developerConnection>scm:git:https://github.com/Wikidata/Wikidata-Toolkit.git</developerConnection>
 	</scm>
 
+    <distributionManagement>
+        <repository>
+            <id>nexus-releases</id>
+            <name>Releases</name>
+            <url>http://host.docker.internal:8081/repository/maven-releases/</url>
+        </repository>
+        
+        <snapshotRepository>
+            <id>nexus-snapshots</id>
+            <name>Snapshot</name>
+            <url>http://host.docker.internal:8081/repository/maven-snapshots/</url>
+        </snapshotRepository>
+    </distributionManagement>
 
-	<distributionManagement>
-		<repository>
-			<id>engagingthings</id>
-			<url>http://host.docker.internal:8081/repository/engagingthings/</url>
-		</repository>
-	</distributionManagement>
 
 </project>
